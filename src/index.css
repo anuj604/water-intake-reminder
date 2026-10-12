@@ -1,0 +1,27 @@
+:root {
+  --ink: #072b3c;
+  --ink-soft: #4b6b78;
+  --accent: #01a7c2;
+  --accent-strong: #016f82;
+  --surface: #ffffff;
+  --surface-tint: #eaf7fa;
+  --line: #d3e6ea;
+  --bg: #f4fbfd;
+
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background-color: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}

@@ -1,0 +1,295 @@
+.app-shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.app-header {
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+
+.app-header h1 {
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 0.35rem;
+}
+
+.tagline {
+  color: var(--ink-soft);
+  margin: 0;
+  max-width: 46ch;
+}
+
+.banner {
+  border-radius: 10px;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+  border-left: 4px solid transparent;
+}
+
+.banner-info {
+  background: var(--surface-tint);
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+.banner-success {
+  background: #e6f5ec;
+  border-color: #2e8b57;
+  color: #1f5f3c;
+}
+
+.banner-alert {
+  background: #fdecec;
+  border-color: #d64545;
+  color: #7a2323;
+}
+
+.app-main {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) 1fr;
+  gap: 2.25rem;
+  align-items: start;
+}
+
+.visual-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: sticky;
+  top: 1.5rem;
+}
+
+.bottle-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.bottle-svg {
+  width: 130px;
+  height: auto;
+}
+
+.bottle-outline {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+
+.bottle-fill {
+  fill: var(--accent);
+  transition: y 0.5s ease, height 0.5s ease;
+}
+
+.bottle-fill-line {
+  fill: var(--accent-strong);
+  opacity: 0.7;
+}
+
+.bottle-cap {
+  fill: var(--ink-soft);
+}
+
+.bottle-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--ink);
+  mix-blend-mode: multiply;
+}
+
+.goal-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.goal-row input {
+  width: 90px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--accent-strong);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.control-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.stat {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.85rem 0.5rem;
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.intake-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.quick-buttons {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.quick-btn {
+  background: var(--surface-tint);
+  border: 1px solid var(--accent);
+  color: var(--accent-strong);
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.quick-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.custom-form {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.custom-form input {
+  flex: 1;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.add-btn {
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.log-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem;
+  margin: 0;
+  color: var(--ink);
+}
+
+.intake-log {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.intake-entry {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+}
+
+.entry-amount {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.entry-time {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  margin-left: auto;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: var(--ink-soft);
+  font-size: 1.1rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 0.2rem;
+}
+
+.remove-btn:hover {
+  color: #d64545;
+}
+
+.empty-state {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .app-main {
+    grid-template-columns: 1fr;
+  }
+
+  .visual-section {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottle-svg {
+    width: 90px;
+  }
+}
